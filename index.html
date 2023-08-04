@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-2 color_cabecalho" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title color_text_title fw-bold"> Fulo Joias em Pratas </h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <Span class="navbar-toggler-icon"></Span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#carousel-img" class="nav-link active color_text_title">
+                            <i class="bi bi-house-door me-1"></i>
+                            Home Fulô
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-fulo" class="nav-link color_text_title">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a Fulo
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#ocasioes" class="nav-link color_text_title">
+                            <i class="bi bi-calendar2-date me-1"></i>
+                            Ocasiões
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#produtos" class="nav-link color_text_title">
+                            <i class="bi bi-house-door me-1"></i>
+                            Nosso portifólio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contato" class="nav-link color_text_title">
+                            <i class="bi bi-house-door me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+        <section id="carousel-img">
+            <div class="container mb-0 cor_fundo">
+                <div class="carousel carousel-fade slide" data-bs-ride="carousel" id="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img class="w-100" src="img fulô/carousel 2.jpg" alt="referencia da foto">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="w-100" src="img fulô/carousel 1.jpg" alt="referencia da foto">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="w-100" src="img fulô/carousel 3.jpg" alt="referencia da foto">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <Section id="sobre-fulo cor_fundo2">
+            <div class="container pt-4 pb-4 cor_fundo3">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="data:image/png;base64,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"
+                            class="s-block w-100 rounded" alt="brinco">
+                    </div>
+                    <div class="col-md-7">
+                        <h2 class="section-title">Sobre a <span class="text_color_cabecalho">Fulô</span></h2>
+                        <p>
+                            A <span class="text_color_cabecalho fw-bold">Fulô</span> loja virtual de peças de joalheria confeccionadas em prata,
+                            um metal precioso conhecido por sua beleza, durabilidade e versatilidade. Essa loja oferece uma ampla variedade de joias,
+                            entre anéis, brincos, colares, pulseiras e pingentes.
+                        </p>
+                        <p>
+                            As joias de prata são apreciadas por sua aparência elegante e brilho característico, tornando-as uma escolha popular para diversos estilos e 
+                            ocasiões. Além disso, a prata é mais acessível do que outros metais preciosos, como o ouro, o que a torna uma opção atraente para aqueles que 
+                            buscam qualidade sem comprometer o orçamento.
+                        </p>
+                        <ul>
+                            <li>Brilho e beleza: A prata possui um brilho suave e branco que confere às joias uma aparência elegante e sofisticada. Esse brilho natural destaca 
+                                as peças e atrai a atenção dos observadores.</li>
+                            <li>Versatilidade: A prata é um metal versátil que pode ser trabalhado em uma ampla variedade de estilos e designs. Isso permite que as joias de prata 
+                                se adaptem a diversos gostos e ocasiões, desde peças simples e delicadas até criações mais elaboradas e complexas.</li>
+                            <li>Durabilidade: A prata é um metal durável e resistente, tornando as joias de prata adequadas para o uso diário. Com os devidos cuidados, 
+                                as peças podem manter sua beleza ao longo do tempo.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </Section>
+
+        <section id="ocasioes" >
+            <div class="container cor_fundo3 pt-4">
+                <div class="row">
+                    <h2 class="text-center">
+                        Onde Usamos <span class="text_color_cabecalho">Fulô</span>
+                    </h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="Img/casamento.jpg" alt="casamento" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text_color_cabecalho fs-4">
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            No casamento
+                        </h3>
+                        <p>
+                            Usar joias de prata no casamento pode ser uma escolha elegante e significativa para muitos casais. 
+                            Algumas das principais características que tornam as joias de prata adequadas para casamentos são:
+                        </p>
+                        <ul>
+                            <li>Elegância e brilho</li>
+                            <li>Versatilidade</li>
+                            <li>Combinação com outras peças</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Img/praia.jpg" alt="praia" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text_color_cabecalho fs-4">
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            Na praia
+                        </h3>
+                        <p>
+                            As joias de prata têm algumas vantagens específicas quando usadas na praia, 
+                            o que as torna uma escolha popular para acessórios de verão. Aqui estão algumas vantagens das joias de prata na praia:
+                        </p>
+                        <ul>
+                            <li>Resistência à corrosão</li>
+                            <li>Menor risco de danos</li>
+                            <li>Facilidade de limpeza</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Img/trabalho.jpg" alt="trabalho" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text_color_cabecalho fs-4">
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            No trabalho
+                        </h3>
+                        <p>
+                            O uso de joias de prata no ambiente de trabalho pode apresentar diversas vantagens, 
+                            tornando-as uma escolha popular para muitos profissionais. Algumas das principais vantagens incluem:
+                        </p>
+                        <ul>
+                            <li>Discrição e elegância</li>
+                            <li>Versatilidade</li>
+                            <li>Profissionalismo: As joias de prata adicionam um toque de sofisticação e seriedade ao visual do profissional</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos">
+            <div class="container cor_fundo4">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Produtos da <span class="text_color_cabecalho"> Fulô </span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <aside>
+                            <nav class="nav nav-pills flex-column nav-categoria">
+                                <button class="fw-bold text-start nav-link text_color_cabecalho active" type="button"
+                                    data-bs-toggle="tab" data-bs-target="#brincos">Brincos</button>
+                                <button class="fw-bold text-start nav-link text_color_cabecalho" type="button"
+                                    data-bs-toggle="tab" data-bs-target="#pulseiras">Pulseiras</button>
+                                <button class="fw-bold text-start nav-link text_color_cabecalho" type="button"
+                                    data-bs-toggle="tab" data-bs-target="#colar">Colar</button>
+                                <button class="fw-bold text-start nav-link text_color_cabecalho" type="button"
+                                    data-bs-toggle="tab" data-bs-target="#anel">Anel</button>
+                            </nav>
+                        </aside>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="brincos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./img fulô/brinco1.jpeg" alt="brinco">
+                                        <h5 class="text_color_cabecalho text-center mt-2"> Brincos com perola </h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ratione
+                                            nihil eius fugit natus repellendus temporibus.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./img fulô/brinco2.jpeg" alt="brinco">
+                                        <h5 class="text_color_cabecalho text-center mt-2"> Brincos com perola </h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ratione
+                                            nihil eius fugit natus repellendus temporibus.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 f-100" src="./img fulô/brinco3.jpeg" alt="brinco">
+                                        <h5 class="text_color_cabecalho text-center mt-2"> Brincos com perola </h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ratione
+                                            nihil eius fugit natus repellendus temporibus.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./img fulô/brinco4.jpeg" alt="brinco">
+                                        <h5 class="text_color_cabecalho text-center mt-2"> Brincos com perola </h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ratione
+                                            nihil eius fugit natus repellendus temporibus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="pulseiras">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./img fulô/pulseira1.jpeg" alt="pulseira">
+                                        <h5 class="text_color_cabecalho text-center mt-2"> Pulseira </h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ratione
+                                            nihil eius fugit natus repellendus temporibus.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./img fulô/pulseira2.jpeg" alt="pulseira">
+                                        <h5 class="text_color_cabecalho text-center mt-2"> Pulseira </h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ratione
+                                            nihil eius fugit natus repellendus temporibus.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./img fulô/pulseira3.jpeg" alt="pulseira">
+                                        <h5 class="text_color_cabecalho text-center mt-2"> Pulseira </h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ratione
+                                            nihil eius fugit natus repellendus temporibus.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./img fulô/pulseira4.jpeg" alt="pulseira">
+                                        <h5 class="text_color_cabecalho text-center mt-2"> Pulseira </h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ratione
+                                            nihil eius fugit natus repellendus temporibus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="colar">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./img fulô/cola1.jpeg" alt="pulseira">
+                                        <h5 class="text_color_cabecalho text-center mt-2"> Pulseira </h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ratione
+                                            nihil eius fugit natus repellendus temporibus.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./img fulô/cola2.jpeg" alt="pulseira">
+                                        <h5 class="text_color_cabecalho text-center mt-2"> Pulseira </h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ratione
+                                            nihil eius fugit natus repellendus temporibus.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./img fulô/cola3.jpeg" alt="pulseira">
+                                        <h5 class="text_color_cabecalho text-center mt-2"> Pulseira </h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ratione
+                                            nihil eius fugit natus repellendus temporibus.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./img fulô/cola4.jpeg" alt="pulseira">
+                                        <h5 class="text_color_cabecalho text-center mt-2"> Pulseira </h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ratione
+                                            nihil eius fugit natus repellendus temporibus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="anel">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./img fulô/Anel1.jpeg" alt="anel">
+                                        <h5 class="text_color_cabecalho text-center mt-2"> Pulseira </h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ratione
+                                            nihil eius fugit natus repellendus temporibus.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./img fulô/Anel2.jpeg" alt="anel">
+                                        <h5 class="text_color_cabecalho text-center mt-2"> Pulseira </h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ratione
+                                            nihil eius fugit natus repellendus temporibus.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./img fulô/Anel3.jpeg" alt="anel">
+                                        <h5 class="text_color_cabecalho text-center mt-2"> Pulseira </h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ratione
+                                            nihil eius fugit natus repellendus temporibus.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./img fulô/Anel4.jpeg" alt="anel">
+                                        <h5 class="text_color_cabecalho text-center mt-2"> Pulseira </h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ratione
+                                            nihil eius fugit natus repellendus temporibus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="contato" class="pt-5 pb-5">
+            <div class="container cor_fundo5">
+                <div class="row">
+                    <h2 class="section-title text-center">Entre em contato com a <span class="text_color_cabecalho">Fulô</span>
+                    </h2>
+                    <div class="col-md-7">
+                        <form action="">
+                            <div>
+                                <label for="nome" class="form-label text_color_cabecalho">Seu nome:</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div>
+                                <label for="email" class="form-label text_color_cabecalho">Seu e-mail:</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div>
+                                <label for="telefone" class="form-label text_color_cabecalho">Seu telefone:</label>
+                                <input type="tel" id="telefone" class="form-control" required>
+                            </div>
+                            <div>
+                                <label for="mensagem" class="form-label text_color_cabecalho"> Deixe sua mensagem:</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text_color_cabecalho mt-3">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-link">
+                                <li class="fs-5">
+                                    <a href="https://www.facebook.com/pratasfulo/">
+                                        <i class="bi bi-facebook text_color_cabecalho"></i>
+                                    </a>
+                                </li>
+
+                                <li class="fs-5">
+                                    <a href="">
+                                        <i class="bi bi-instagram text_color_cabecalho"></i>
+                                    </a>
+                                </li>
+
+                                <li class="fs-5">
+                                    <a href="https://www.tiktok.com/@pratasfulo">
+                                        <i class="bi bi-tiktok text_color_cabecalho"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text_color_cabecalho">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço da Fulô
+                            </h3>
+                            <p>
+                                Rua Amabile miosso, 342 - Santos do Dumont - Votorantim
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

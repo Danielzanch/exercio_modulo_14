@@ -1,0 +1,63 @@
+body {
+    background-color: #efdfdb;
+}
+
+.color_text_title {
+    color: #efdfdb;
+}
+
+.color_cabecalho {
+    background-color: #7a3930;
+}
+
+.text_color_cabecalho {
+    color: #7a3930;
+    }
+
+.nav .nav-link .active {
+    background-color: #fff;
+    color: #7a3930;
+}
+
+.nav .nav-link, .navbar-brand, .navbar-brand:houver {
+    color: #fff;
+}
+
+#sobre-fulo .container {
+    background-color: #d3b2ab;
+}
+
+.ocasioes {
+    background-color: #d0c1be;
+}
+
+.social-link li {
+    list-style: none;
+    display: inline;
+}
+
+.social-link a {
+    text-decoration: none;
+}
+
+.cor_fundo {
+    background-color: #edd0c8;
+}
+
+.cor_fundo2 {
+    background-color: firebrick
+}
+
+.cor_fundo3 {
+    background-color: #edd0c8;
+}
+
+.cor_fundo4 {
+    background-color: #edd0c8;
+}
+
+.btn {
+    background-color: #7a3930;
+    color:#fff;
+    margin-top: 5px;
+}
